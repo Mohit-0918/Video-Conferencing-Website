@@ -1,10 +1,6 @@
 import React from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
 import { useState , useEffect} from "react";
-import logo from '../assets/img/logo.svg';  
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 import {BrowserRouter as Router} from "react-router-dom";
 export const NavBar =()=>{
     const [activeLink, setActiveLink] =useState('home');
@@ -43,12 +39,12 @@ export const NavBar =()=>{
 
                 <Nav.Link href="#skills" 
                 className={activeLink ==='skills'?'active navbar-link':'navbar-link '} 
-                onClick={()=>onUpdateActiveLink('skills')}>Skills
+                onClick={()=>onUpdateActiveLink('skills')}>Feedback
                 </Nav.Link>
 
                 <Nav.Link href="#projects" 
                 className={activeLink ==='projects'?'active navbar-link':'navbar-link'} 
-                onClick={()=>onUpdateActiveLink('projects')}>Projects
+                onClick={()=>onUpdateActiveLink('projects')}>About Us
                 </Nav.Link> 
                 </Nav>
             <span className="navbar-text">
