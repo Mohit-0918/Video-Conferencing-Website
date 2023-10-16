@@ -2,7 +2,7 @@ import React from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
 import { useState , useEffect} from "react";
 import {BrowserRouter as Router} from "react-router-dom";
-export const NavBar =()=>{
+const NavBar =()=>{
     const [activeLink, setActiveLink] =useState('home');
     const [scrolled,setScrolled]=useState(false);
 
@@ -23,7 +23,6 @@ export const NavBar =()=>{
         setActiveLink(value);
     }
     return(
-    <Router> 
     <Navbar expand="md" className={scrolled?"scrolled":""}>
         <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -53,6 +52,6 @@ export const NavBar =()=>{
             </Navbar.Collapse>
         </Container>
         </Navbar>
-        </Router>
     )
 }
+export default NavBar;

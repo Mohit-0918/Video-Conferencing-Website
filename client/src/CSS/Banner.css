@@ -4,7 +4,7 @@
 
 .banner{
     margin-top: 0;
-    padding: 260px 0px 100px 0px;
+    padding: 160px 0px 100px 0px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,14 +13,14 @@
     font-weight: 700;
     letter-spacing: 0.8px;
     padding: 18px 34px;
-    background: linear-gradient(90.21deg, #071e22 5.91%, #1d7874 111.58%);
-    border: 1px solid #679289;
+    background: linear-gradient(90.21deg, #071e22 15.91%, #1d7874 111.58%);
+    border: 0.75px solid linear-gradient(90.21deg, #071e22 15.91%, #1d7874 111.58%);
     font-size: 25px;
     margin-bottom:16 px;
     display:inline-block;
   }
   .banner h1 {
-    padding:5px;
+    padding:15px 15px 15px 15px;
     font-size: 65px;
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -29,7 +29,7 @@
     display: block;
   }
   .banner h5 {
-    padding:15px;
+    padding:40px 15px 15px 15px;
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
