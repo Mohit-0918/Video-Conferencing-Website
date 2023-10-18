@@ -1,11 +1,11 @@
 import React from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
 import { useState , useEffect} from "react";
-import {BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, useNavigate} from "react-router-dom";
 const NavBar =()=>{
     const [activeLink, setActiveLink] =useState('home');
     const [scrolled,setScrolled]=useState(false);
-
+    const navigate=useNavigate();
     useEffect(() => {
         const onScroll=()=>{
             if(window.scrollY>50){
@@ -47,7 +47,7 @@ const NavBar =()=>{
                 </Nav.Link> 
                 </Nav>
             <span className="navbar-text">
-                <button className="vvd" onClick={()=>console.log('connect')}><span>Lets Connect</span></button>
+                <button className="vvd" onClick={()=>navigate("/lobby")}><span>Lets Connect</span></button>
             </span>
             </Navbar.Collapse>
         </Container>

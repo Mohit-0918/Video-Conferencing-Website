@@ -4,9 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo\"no test\"&& exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
+    "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"
   }
 }

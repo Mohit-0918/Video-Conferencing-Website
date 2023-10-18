@@ -1,18 +1,16 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom';
-import './CSS/App.css';
-import './CSS/NavBar.css';
-import './CSS/Banner.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import NavBar from './components/NavBar'
-import { Banner } from './components/Banner';
+import Lobby from './pages/Lobby';
+import Home from './pages/Home';
+import Room from './pages/Room';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={[<NavBar/>,<Banner/>]}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Lobby" element={<Lobby />}/>
+        <Route path="/room/:roomId" element={<Room/>}/>
       </Routes>
     </div>
   );
